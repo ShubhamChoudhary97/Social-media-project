@@ -35,11 +35,13 @@ src/public
   =>common.css
   =>write-post.js
   =>navbar.js
+  =>my-posts.js
 ->components         # our own html snippets 
   =>navbar.html
   =>footer.html
   =>all-posts.html
   =>write-post.html
+  =>my-posts.html
 ->css                # css libraries we are using
   =>bootstrap.css
 ->fonts              # fonts we are using
