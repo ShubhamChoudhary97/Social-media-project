@@ -8,6 +8,7 @@ const {usersRoute} = require('./routes/users')
 const {postsRoute} = require('./routes/posts')
 
 const app = express()
+const PORT = process.env.PORT || 8383
 
 app.use(session({
     resave: true,
@@ -80,8 +81,8 @@ const db = models.db
 
 db.sync()
   .then(()=>{
-    app.listen('8383', ()=>{
-        console.log('Server started on http://localhost:8383')
+    app.listen(PORT, ()=>{
+        console.log(`Server started on http://localhost:${PORT}`)
     })
 }).catch((err)=>{
     console.error(new Error('Could not start the database'))
