@@ -4,19 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
     <!--3rd Party Libraries-->
     <link rel="stylesheet" href="/css/bootstrap.css">
     <script defer src="/js/jquery-3.4.1.js"></script>
     <script defer src="/js/popper.js"></script>
     <script defer src="/js/bootsrap.js"></script>
-    <!--Our app logic and style-->
-    <link rel="stylesheet" href="/app/common.css">
-    <script defer src="/app/common.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div id="navbar"></div>
-    <div id="content"></div>
-    <div id="footer"></div>
+   <h2 style="text-align:left; margin-top: 20px; border-radius: 15px; margin-left: 10px">Mock Social</h2>
+   <form action="/" method="POST" style="border:1px solid #ccc">
+    <div class="container">
+       <h1>Signup</h1>
+       <p>Please fill in this form to create an account.</p>
+       <hr>
+       <label for="username"><b>Username</b></label>
+       <input type="text" name="username" id="username" placeholder="Choose Username" required>
+       <br>
+       <label for="email"><b>Email</b></label>
+       <input type="email" name="email" id="email" placeholder="Email ID" required>
+       <br>
+       <label for="password"><b>Password</b></label>
+       <input type="password" name="password" id="password" placeholder="Password" required>
+       <br>
+       <div class="bt">
+        <button type="submit" id="btnSubmit">Sign Up</button>
+       </div>
+       <p>Already a member? <a href="/login">Log in</a></p>
+   </div>   
+   </form> 
 </body>
 </html>

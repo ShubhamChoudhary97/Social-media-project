@@ -3,11 +3,11 @@ $(()=>{
     let body1 = $('#body')
     let btnSubmit = $('#btnSubmit')
     $('#btnSubmit').click(()=>{
-        let currentuser = JSON.parse(window.localStorage.user)
+        let currentuserid = window.localStorage.id
         $.post('/api/posts',{
            title: title1.val(),
            body: body1.val(),
-           userId: currentuser.id
+           userId: currentuserid
         },function(data){
             window.alert("Post with "+title1.val()+" added successfully")
             $('#title').val('')

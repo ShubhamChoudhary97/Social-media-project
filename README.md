@@ -1,5 +1,8 @@
 # Social Media Sample Project
 
+It is Mock Social media webapp prototype using html, css, js, express js, jquery, view(hbs) and sequelize(mysql) for database.
+For user authentication I used express-session and I used "bcrypt"  as cryptographic hashing algorithm for hashing the password.  
+
 ## Database Setup
 
 ```Shell
@@ -24,6 +27,7 @@ src:
 -> db            # db connections and model definitions
 -> public        # html/js/css files for static part of site
 -> routes        # express middlewares routewise
+-> views         # We are using handlebars(hbs) as our view for login and home page
 ```
 
 ### Frontend (Client Side code)
@@ -44,6 +48,7 @@ src/public
   =>my-posts.html
 ->css                # css libraries we are using
   =>bootstrap.css
+  =>index.css        # CSS file used for signup(index) & login page 
 ->fonts              # fonts we are using
   =>Muli-italic.woff2
   =>muli.css

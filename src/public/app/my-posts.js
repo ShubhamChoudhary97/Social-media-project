@@ -1,7 +1,7 @@
 function loadPosts1(){
     $.get('/api/posts',(posts)=>{
         for(let p of posts){
-            if(p.user.id==window.currentuser.id){
+            if(p.user.id==window.localStorage.id){
                 $('#posts-container1').append
             (`
               <div class="col-4">

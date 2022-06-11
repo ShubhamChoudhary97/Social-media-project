@@ -26,7 +26,14 @@ const COL_TITLE_DEF = {
 
 const Users = db.define('user',{
     id: COL_ID_DEF,
-    username: COL_USERNAME_DEF
+    username: COL_USERNAME_DEF,
+    email: {
+       type: Sequelize.DataTypes.STRING(100)
+    },
+    password: {
+        type: Sequelize.DataTypes.STRING,
+        allowNull: false
+    }
 })
 
 const Posts = db.define('post',{

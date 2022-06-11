@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="jquery.js"></script>-->
+    <!--<script src="login.js"></script>-->
+    <link rel="stylesheet" href="/css/index.css">
+    <!--3rd Party Libraries-->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script defer src="/js/jquery-3.4.1.js"></script> 
+    <script defer src="/js/popper.js"></script>
+    <script defer src="/js/bootsrap.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   <h2 style="text-align:left; margin-top: 20px; border-radius: 15px; margin-left: 10px">Mock Social</h2>
+   <form action="/login" method="POST" style="border:1px solid #ccc">
+    <div class="container">
+       <h1>Login</h1>
+       <p>Please enter your username and password for logging in to Mock Social.</p>
+       <hr>
+       <div id="error">{{error}}</div>
+       <label for="username"><b>Username</b></label>
+       <input type="text" name="username" id="username" placeholder="Enter Username" required>
+       <br>
+       <label for="password"><b>Password</b></label>
+       <input type="password" name="password" id="password" placeholder="Enter Password" required>
+       <br>
+       <div class="bt">
+        <button type="submit" id="btnLogin">Log In</button>
+       </div>
+   </div>   
+   </form> 
+</body>
+</html>
