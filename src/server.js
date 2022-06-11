@@ -12,7 +12,10 @@ const app = express()
 app.use(session({
     resave: true,
     saveUninitialized: true,
-    secret: '123qwe456asd789zxc'
+    secret: '123qwe456asd789zxc',
+    cookie: {
+        maxAge: 1000*60*60*24
+    }
 }))
 
 app.use(express.json())
