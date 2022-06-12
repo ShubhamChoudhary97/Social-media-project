@@ -1,10 +1,18 @@
 const Sequelize = require('sequelize')
 
-const db = new Sequelize({
+/*const db = new Sequelize({
     dialect: 'mysql',
     database: 'cbsocialmediadb',
     username: 'cbsocialuser',
     password: 'cbsocialpass'
+})*/
+
+const db = new Sequelize({
+    dialect: 'postgres',
+    database: 'd4g5orq13tgu9r',
+    username: 'ekomongyjcqgwq',
+    password: '47705321040b017fee482f96cf97298172e93f683e1b1f9cdbeb522cac0922f3',
+    host: 'ec2-54-165-178-178.compute-1.amazonaws.com'
 })
 
 const COL_ID_DEF = {
